@@ -15,7 +15,7 @@
     <body>
         <div class="caixa-video">
             <video src="./videos/coffe.mp4" loop muted autoplay></video>
-            <div class="mascara"></div>
+            <div class="mascara-principal"></div>
         </div>
         <header class="header">
             <section>
@@ -24,9 +24,8 @@
                 </a>
                 <nav>
                     <a href="#">Inicio</a>
-                    <a href="#">Menu</a>
                     <a href="#">Sobre</a>
-                    <a href="#">Avaliacoes</a>
+                    <a href="#" onclick="exibeModal()">Endereco</a>
                     <a href="#">Contato</a>
                 </nav>
             </section>
@@ -36,22 +35,23 @@
             <div>
                 <h3>Code com o melhor café da Regiao</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem temporibus optio
-                    sint eum dignissimos excepturi doloribus doloremque quidem mollitia adipisci
-                    cumque accusamus at, nihil magnam atque non iusto ipsa error!
+                    Nada como uma boa xícara de café para manter o foco e a energia enquanto você
+                    escreve as próximas linhas de código. Nosso café é especialmente preparado para
+                    oferecer aquele sabor encorpado e único, que desperta a criatividade e mantém a
+                    produtividade em alta.
                 </p>
-                <a>Pessa o seu aqui!</a>
+                <a class="link-button">Pessa o seu aqui!</a>
             </div>
         </section>
 
         <section class="caixa-sobre">
-            <h2><span>Sobre</span> Nos</h2>
+            <h2 class="titulo"><span>Sobre</span> Nós</h2>
             <div class="sobre-container">
                 <div class="sobre-imagem">
                     <img src="./img/about-img.jpeg" alt="" />
                 </div>
                 <div class="sobre-texto">
-                    <h3>O que faz nosso café especial</h3>
+                    <h3>O que faz o nosso café Especial?</h3>
                     <p>
                         Nosso café é cuidadosamente selecionado das melhores fazendas da região para
                         que voce atinja o apice da sua criatividade na hora de codar. Cada xícara
@@ -64,9 +64,23 @@
                         treinados para extrair o melhor de cada grão, transformando nossa paixão
                         pelo café em uma experiência que envolve em todos os sentidos.
                     </p>
-                    <a>Saiba Mais</a>
+                    <a class="link-button">Saiba Mais</a>
                 </div>
             </div>
         </section>
+        <div class="modal">
+            <h3 class="titulo"><span>Onde</span> Estamos</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36551.665210389176!2d-43.21856753636482!3d-19.62626288686414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1730994890669!5m2!1spt-PT!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        <div class="mascara-modal" onclick="esconderModal()"></div>
+        <script src="./scripts.js"></script>
     </body>
 </html>
